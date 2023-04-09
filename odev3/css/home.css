@@ -1,3 +1,4 @@
+/* ======== HEADER ======== */
 .home--header{
     display:flex;
 }
@@ -14,8 +15,12 @@
     font-size: 5vw;
     line-height: 5vw;
     position: absolute;
-    top:7.2vw;
-    left:14.2vw;
+    top:7vw;
+    left:15.5vw;
+    background: -webkit-linear-gradient(left, #fff 63%, #131313 37%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .home--header__middle--image{
@@ -28,12 +33,16 @@
 }
 
 .home--header__text{
+    width:17%;
     position: absolute;
-    left:70.2rem;
-    margin-top:12rem;
-    width:18rem;
+    left:57.5vw;
+    top:9.5vw;
+    font-size:1vw;
+    line-height:1.5vw;
 }
 
 .home--header__button{
-    margin-top:2.5rem;
+    margin-top:2vw;
 }
+
+/* ======== HEADER END ======== */
