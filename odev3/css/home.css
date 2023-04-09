@@ -4,28 +4,36 @@
 
 .home--header__block{
     content: '';
-    height: 42em!important;
-    width: 26em!important;
+    width:30%;
     background-color: var(--COLOR-BLACK);
 }
 
 .home--header__block__h1{
-    margin-left:var(--MARGIN-XXL);
-    margin-top:var(--MARGIN-XL);
     font-family: var(--FONT-FAMILY-HEADINGS);
     color: var(--COLOR-WHITE);
-    font-size: var(--FONT-SIZE-HEADINGS-XL);
-    line-height: var(--LINE-HEIGHT-HEADINGS-XL);
+    font-size: 5vw;
+    line-height: 5vw;
     position: absolute;
+    top:7.2vw;
+    left:14.2vw;
 }
 
-
 .home--header__middle--image{
-    width:29em!important;
-    height:42em!important;
+    width:30%;
 }
 
 .home--header__middle--image img{
     width:100%;
     height:100%;
+}
+
+.home--header__text{
+    position: absolute;
+    left:70.2rem;
+    margin-top:12rem;
+    width:18rem;
+}
+
+.home--header__button{
+    margin-top:2.5rem;
 }
