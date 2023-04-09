@@ -1,0 +1,31 @@
+.home--header{
+    display:flex;
+}
+
+.home--header__block{
+    content: '';
+    height: 42em!important;
+    width: 26em!important;
+    background-color: var(--COLOR-BLACK);
+}
+
+.home--header__block__h1{
+    margin-left:var(--MARGIN-XXL);
+    margin-top:var(--MARGIN-XL);
+    font-family: var(--FONT-FAMILY-HEADINGS);
+    color: var(--COLOR-WHITE);
+    font-size: var(--FONT-SIZE-HEADINGS-XL);
+    line-height: var(--LINE-HEIGHT-HEADINGS-XL);
+    position: absolute;
+}
+
+
+.home--header__middle--image{
+    width:29em!important;
+    height:42em!important;
+}
+
+.home--header__middle--image img{
+    width:100%;
+    height:100%;
+}

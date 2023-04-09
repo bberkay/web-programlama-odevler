@@ -1,0 +1,108 @@
+/* 
+    Fonts 
+ */
+@font-face{
+    font-family: 'BigShouldersDisplay-Black';
+    src: url('../assets/fonts/BigShouldersDisplay-Black.ttf');
+}
+
+@font-face{
+    font-family: 'Outfit-Light';
+    src: url('../assets/fonts/Outfit-Light.ttf');
+}
+
+/* 
+    Variables 
+*/
+:root{
+    /* COLORS */
+    --COLOR-MAIN: #D5966C;
+    --COLOR-BLACK: #151515;
+    --COLOR-GREY: #444;
+    --COLOR-WHITE: #fff;
+
+    /* FONTS */
+    --FONT-FAMILY-HEADINGS: 'BigShouldersDisplay-Black';
+    --FONT-FAMILY-BODY: 'Outfit-Light';
+
+    /* FONT SIZES */
+    --FONT-SIZE-HEADINGS-XL: 6rem; /* 96px */
+    --FONT-SIZE-HEADINGS-L: 4.375rem; /* 70px */
+    --FONT-SIZE-HEADINGS-M: 3.75rem; /* 60px */
+    --FONT-SIZE-HEADINGS-S: 2.25rem; /* 36px */
+    --FONT-SIZE-BODY-M: 1.375rem; /* 22px */
+    --FONT-SIZE-BODY-S: 1.125rem; /* 18px */
+
+    /* LINE HEIGHTS */
+    --LINE-HEIGHT-HEADINGS-XL: 88px;
+    --LINE-HEIGHT-HEADINGS-L: 70px;
+    --LINE-HEIGHT-HEADINGS-M: 50px;
+    --LINE-HEIGHT-HEADINGS-S: 36px;
+    --LINE-HEIGHT-BODY-M: 32px;
+    --LINE-HEIGHT-BODY-S: 28px;
+
+    /* MARGIN */
+    --MARGIN-XXS: 0.25rem; /* 4px */
+    --MARGIN-XS: 0.5rem; /* 8px */
+    --MARGIN-S: 1rem; /* 16px */
+    --MARGIN-M: 2rem; /* 32px */
+    --MARGIN-L: 4rem; /* 64px */
+    --MARGIN-XL: 8rem; /* 128px */
+    --MARGIN-XXL: 10.5rem; /* 168px */
+
+    /* PADDING */
+    --PADDING-XXS: 0.25rem; /* 4px */
+    --PADDING-XS: 0.5rem; /* 8px */
+    --PADDING-S: 1rem; /* 16px */
+    --PADDING-M: 2rem; /* 32px */
+    --PADDING-L: 4rem; /* 64px */
+    --PADDING-XL: 8rem; /* 128px */
+    --PADDING-XXL: 10.5rem; /* 168px */
+
+}
+
+body{
+    margin:0;
+    padding:0;
+    font-family: var(--FONT-FAMILY-BODY);
+    font-size: var(--FONT-SIZE-BODY-S);
+    line-height: var(--LINE-HEIGHT-BODY-S);
+}
+
+h1, h2, h3, h4, h5, h6 { font-family: var(--FONT-FAMILY-HEADINGS); }
+
+
+/*
+    ================ COMPONENTS ================
+*/
+
+/* Buttons */
+.button{
+    font-family: var(--FONT-FAMILY-HEADINGS);
+    color:var(--COLOR-WHITE);
+    border-radius: 0px!important;
+    padding:1.2rem;
+    padding-right:1.2rem;
+}
+
+.button__button-dark{
+    padding-left:1.7rem;
+    word-spacing: 0.25rem;
+    letter-spacing: 0.12rem;
+    text-decoration: none;
+    background-color:var(--COLOR-BLACK);
+    transition:all 0.2s ease-in-out;
+}
+
+.button__button-light{
+    background-color:var(--COLOR-MAIN);
+    transition:all 0.2s ease-in-out;
+}
+
+.button:hover .button__button-dark{
+    background-color:var(--COLOR-MAIN);
+}
+
+.button:hover .button__button-light{
+    background-color:var(--COLOR-BLACK);
+}
