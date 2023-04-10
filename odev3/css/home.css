@@ -1,22 +1,22 @@
 /* ======== HEADER ======== */
 .home--header-lg{
+    margin-top:-40px;
     display:flex;
 }
 
 .home--header-lg__block{
     content: '';
-    width:37%;
+    width:32%;
     background-color: var(--COLOR-BLACK);
 }
 
 .home--header-lg__block__h1{
     font-family: var(--FONT-FAMILY-HEADINGS);
     color: var(--COLOR-WHITE);
-    font-size: 5vw;
-    line-height: 5vw;
+    font-size: 6vw;
+    line-height: 6vw;
     position: absolute;
-    top:11vw;
-    left:23.3vw;
+    top:8vw;
     background: -webkit-linear-gradient(left, #fff 63%, #131313 37%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -24,19 +24,20 @@
 }
 
 .home--header-lg__middle--image{
-    width:37%;
+    width:35%;
 }
 
 .home--header-lg__middle--image img{
-    width:100%;
+    width:110%;
     height:100%;
 }
 
 .home--header-lg__text{
-    width:17%;
+    width:18%;
     position: absolute;
-    left:70vw;
-    top:13vw;
+    top:11vw;
+    right:0;
+    margin-right:14vw;
     font-size:1.1vw;
     line-height:1.6vw;
 }
@@ -46,27 +47,28 @@
 }
 
 /* For Desktop & Tablet */
-@media screen and (min-width: 768px){
+@media screen and (min-width: 401px){
     .home--header-sm{
         display:none;
     }
 }
 
 /* For Tablet */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 996px) {
     .home--header-lg__block{
         width:0%;
     }
 
     .home--header-lg__middle--image{
-        width:65%;
+        width:55%;
     }
 
     .home--header-lg__text{
-        width:35%;
-        left:57vw;
+        width:40%;
+        right:0;
         top:40vw;
         font-size:2.5vw;
+        margin-right:5vw;
         line-height:3.5vw;
     }
 
@@ -75,10 +77,11 @@
     }
 
     .home--header-lg__block__h1{
+        width:40%;
         font-size: 8vw;
         line-height: 8vw;
         top:16vw;
-        left:57vw;
+        right:0;
         background: -webkit-linear-gradient(left, #131313 63%, #131313 37%);
         background-clip: text;
         -webkit-background-clip: text;
@@ -117,3 +120,118 @@
     }
 }
 /* ======== HEADER END ======== */
+
+/* ======== WELCOME ======== */
+.home--content__welcome{
+    display:flex;
+    margin-top:13vw;
+    font-size:1.4vw;
+    line-height:1.7vw;
+}
+
+.home--content__welcome__desc{
+    padding-right:10vw;
+    width:35%;
+}
+
+.home--content__welcome__h1{
+    color: var(--COLOR-BLACK);
+    font-size: 4vw;
+    line-height: 4vw;
+}
+
+.home--content__welcome__image{
+    width:60%;
+}
+
+.home--content__welcome__image img{
+    width:100%;
+    height:100%;
+}
+
+/* For Mobile */
+@media screen and (max-width:400px){
+    .home--content__welcome{
+        margin-top:23vw;
+        display:flex;
+        flex-direction:column;
+    }
+
+    .home--content__welcome__desc{
+        padding-right:0;
+        width:100%;
+        order:2;
+    }
+
+    .home--content__welcome__h1{
+        margin-top:10px;
+        margin-bottom:0px;
+        font-size: 10vw;
+        line-height: 10vw;
+    }
+
+    .home--content__welcome__p{
+        font-size: 4.5vw;
+        line-height: 6.5vw;
+    }
+
+    .home--content__welcome__image{
+        width:100%;
+        order:1;
+    }
+}
+/* ======== WELCOME END ======== */
+
+/* ======== GALLERY ======== */
+.home--content__gallery{
+    margin-top:2vw;
+    display:flex;
+}
+
+.home--content__gallery--left{
+    padding-right:1rem;
+    width:57.5%;
+}
+
+.home--content__gallery--left img{
+    width:100%;
+}
+
+.home--content__gallery--right{
+    padding-left:1rem;
+    width:42.5%;
+}
+
+.home--content__gallery img{
+    width:100%;
+    height:100%;
+}
+
+.home--content__gallery--right__block{
+    margin-top:20px;
+    padding-top:4vh;
+    padding-left:4vw;
+    padding-right:4vw;
+    padding-bottom:4vh;
+    background-color: var(--COLOR-BLACK);
+}
+
+.home--content__gallery--right__block__h1{
+    font-family: var(--FONT-FAMILY-HEADINGS-BOLD);
+    color: var(--COLOR-WHITE);
+    font-size: 4vw;
+    line-height: 4vw;
+    margin-bottom:0;
+}
+
+.home--content__gallery--right__block__p{
+    font-size: 1.5vw;
+    line-height: 2vw;
+    color: var(--COLOR-WHITE);
+}
+
+/* For Mobile */
+@media screen and (max-width:400px){
+    
+}
+/* ======== GALLERY END ======== */
