@@ -1,48 +1,119 @@
 /* ======== HEADER ======== */
-.home--header{
+.home--header-lg{
     display:flex;
 }
 
-.home--header__block{
+.home--header-lg__block{
     content: '';
-    width:30%;
+    width:37%;
     background-color: var(--COLOR-BLACK);
 }
 
-.home--header__block__h1{
+.home--header-lg__block__h1{
     font-family: var(--FONT-FAMILY-HEADINGS);
     color: var(--COLOR-WHITE);
     font-size: 5vw;
     line-height: 5vw;
     position: absolute;
-    top:7vw;
-    left:15.5vw;
+    top:11vw;
+    left:23.3vw;
     background: -webkit-linear-gradient(left, #fff 63%, #131313 37%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.home--header__middle--image{
-    width:30%;
+.home--header-lg__middle--image{
+    width:37%;
 }
 
-.home--header__middle--image img{
+.home--header-lg__middle--image img{
     width:100%;
     height:100%;
 }
 
-.home--header__text{
+.home--header-lg__text{
     width:17%;
     position: absolute;
-    left:57.5vw;
-    top:9.5vw;
-    font-size:1vw;
-    line-height:1.5vw;
+    left:70vw;
+    top:13vw;
+    font-size:1.1vw;
+    line-height:1.6vw;
 }
 
-.home--header__button{
+.home--header-lg__button{
     margin-top:2vw;
 }
 
+/* For Desktop & Tablet */
+@media screen and (min-width: 768px){
+    .home--header-sm{
+        display:none;
+    }
+}
+
+/* For Tablet */
+@media screen and (max-width: 768px) {
+    .home--header-lg__block{
+        width:0%;
+    }
+
+    .home--header-lg__middle--image{
+        width:65%;
+    }
+
+    .home--header-lg__text{
+        width:35%;
+        left:57vw;
+        top:40vw;
+        font-size:2.5vw;
+        line-height:3.5vw;
+    }
+
+    .home--header-lg__button{
+        margin-top:4vw;
+    }
+
+    .home--header-lg__block__h1{
+        font-size: 8vw;
+        line-height: 8vw;
+        top:16vw;
+        left:57vw;
+        background: -webkit-linear-gradient(left, #131313 63%, #131313 37%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+}
+
+/* For Mobile */
+@media screen and (max-width: 400px) {
+    .home--header-lg{
+        display:none;
+    }
+
+    .home--header-sm{
+        display:block;
+    }
+
+    .home--header-sm__middle--image{
+        width:100%;
+        height:25vh;
+    }
+
+    .home--header-sm__middle--image img{
+        width:100%;
+        height:100%;
+        object-fit: cover;
+    }
+
+    .home--header-sm__h1{
+        font-family: var(--FONT-FAMILY-HEADINGS);
+        color: var(--COLOR-BLACK);
+        font-size: 12vw;
+        line-height: 12vw;
+        position: relative;
+    }
+}
 /* ======== HEADER END ======== */
