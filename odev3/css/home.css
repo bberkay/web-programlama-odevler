@@ -266,3 +266,13 @@
     }
 }
 /* ======== GALLERY END ======== */
+
+/* ======== FOOTER ======== */
+.footer--home{
+    background-color:var(--COLOR-BLACK);
+}
+
+.footer--home .footer__social--icon:hover{
+    filter: invert(62%) sepia(86%) saturate(237%) hue-rotate(340deg) brightness(88%) contrast(88%);
+}
+/* ======== FOOTER END ======== */

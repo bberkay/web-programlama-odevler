@@ -241,12 +241,17 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--FONT-FAMILY-HEADINGS); }
 
 .footer__social--icon{
     margin-left:10px;
+    cursor: pointer; 
     transition: filter 0.1s ease-in-out;
 }
 
-.footer__social--icon:hover{
-    filter: invert(62%) sepia(86%) saturate(237%) hue-rotate(340deg) brightness(88%) contrast(88%);
-    cursor: pointer;
+/* For Tablet */
+@media screen and (max-width:996px){
+    .footer__title__h1{
+        font-size: 3vw;
+        line-height: 3vw;
+    }
+    
 }
 
 /* For Mobile */

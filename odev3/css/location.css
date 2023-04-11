@@ -1,0 +1,131 @@
+/* ======== LOCATION ======== */
+.location{
+    background-color: var(--COLOR-BLACK);
+    padding-bottom:10rem;
+}
+
+.location__address{
+    padding-top:3rem;
+    display:flex;
+    align-items: flex-start;
+}
+
+.location__address__title{
+    width:40%;
+}
+
+.location__address__content{
+    color: var(--COLOR-WHITE);
+    width:60%;
+}
+
+.location__map{
+    width:100%;
+    height:70vh;
+}
+
+.location__map__img{
+    background-image: url("../assets/images/desktop/image-map@2x.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    width:100%;
+    height:100%;
+}
+
+.location__address{
+    background-color: var(--COLOR-BLACK);
+}
+
+.location__address__title__h1{
+    color: var(--COLOR-WHITE);
+    font-family: var(--FONT-FAMILY-HEADINGS);
+    font-size: 3vw;
+    line-height: 3vw;
+}
+
+.location__address__content__h3{
+    color: var(--COLOR-MAIN);
+    font-family: var(--FONT-FAMILY-HEADINGS);
+    font-size:1.5vw;
+    line-height:1.5vw;
+}
+
+.location--header-sm__button{
+    position: absolute;
+    z-index:99;
+}
+
+/* For Tablet */
+@media screen and (max-width:996px){
+    .location__address__title__h1{
+        font-size: 5vw;
+        line-height: 5vw;
+    }
+}
+
+/* For Mobile */
+@media screen and (max-width: 400px) {
+    .location{
+        background-color: var(--COLOR-BLACK);
+        padding-bottom:2rem;
+    }   
+    
+    .location__map{
+        height:55vh;
+    }
+
+    .location__address{
+        padding-top:1rem;
+        display:flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .location__address__title__h1{
+        font-size: 10vw;
+        line-height:10vw;
+    }
+
+    .location__address__content__h3{
+        font-size:7vw;
+        line-height:7vw;
+    }
+    
+    .location__address__title{
+        width:100%;
+    }
+    
+    .location__address__content{
+        width:100%;
+    }
+
+    .location--header-sm__button{
+        margin-left:0;
+        margin-right:0;
+    }
+
+}
+/* ======== LOCATION END ======== */
+
+
+/* ======== FOOTER ======== */
+.footer--location{
+    margin-top:0!important;
+    background-color:var(--COLOR-MAIN);
+}
+
+.footer--location .footer__title__h1{
+    color: var(--COLOR-BLACK);
+}
+
+.footer--location .footer__text__p{
+    color: var(--COLOR-BLACK);
+}
+
+.footer--location .footer__social--icon:hover{
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(109deg) brightness(104%) contrast(101%);
+}
+
+/* ======== FOOTER END ======== */
