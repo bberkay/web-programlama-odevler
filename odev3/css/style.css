@@ -160,7 +160,7 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--FONT-FAMILY-HEADINGS); }
 }
 
 /* For Mobile */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 576px) {
     .container{
         margin-left:25px;
         margin-right:25px;
@@ -255,7 +255,7 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--FONT-FAMILY-HEADINGS); }
 }
 
 /* For Mobile */
-@media screen and (max-width:400px){
+@media screen and (max-width:576px){
     .footer .container{
         flex-direction: column;
     }

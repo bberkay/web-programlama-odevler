@@ -47,7 +47,7 @@
 }
 
 /* For Desktop & Tablet */
-@media screen and (min-width: 401px){
+@media screen and (min-width: 577px){
     .home--header-sm{
         display:none;
     }
@@ -91,7 +91,7 @@
 }
 
 /* For Mobile */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 576px) {
     .home--header-lg{
         display:none;
     }
@@ -150,7 +150,7 @@
 }
 
 /* For Mobile */
-@media screen and (max-width:400px){
+@media screen and (max-width:576px){
     .home--content__welcome{
         margin-top:23vw;
         display:flex;
@@ -231,7 +231,7 @@
 }
 
 /* For Mobile */
-@media screen and (max-width:400px){
+@media screen and (max-width:576px){
     .home--content__gallery{
         display:flex;
         flex-direction:column;
